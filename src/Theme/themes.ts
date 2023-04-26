@@ -14,6 +14,7 @@ export const theme = createTheme({
   palette: {
     primary: {
       main: "#8792B0",
+      light: '#CCD6F6'
     },
     secondary: {
       main: "#55D7BB",
@@ -30,14 +31,14 @@ export const theme = createTheme({
       lineHeight: 1.4
     },
     h1: {
-      fontSize: 84,
+      fontSize: 64,
       fontWeight: 400,
       fontFamily: "Gill Sans",
     },
 
     h4: {
       fontFamily: "Gill Sans",
-      fontWeight: 100, 
+      fontWeight: 200, 
       fontSize: "28px", 
     },
 
