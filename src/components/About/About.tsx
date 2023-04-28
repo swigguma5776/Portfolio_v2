@@ -20,7 +20,7 @@ const techList = [
 
 export const About = () => {
     return (
-        <Stack direction = 'column' width='60%' padding='30px'>
+        <Stack direction = 'column' width='60%' padding='30px' mt='50px'>
             <Typography variant='body1' color='primary'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
             ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 

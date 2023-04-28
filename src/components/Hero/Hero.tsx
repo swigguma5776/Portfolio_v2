@@ -7,6 +7,8 @@ import { Avatar,
 import hero_image from '../../assets/images/alex2crop.jpg'; 
 import IconButton from '@mui/material/IconButton';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 
 export const Hero = () => {
@@ -23,6 +25,8 @@ export const Hero = () => {
                         innovative ideas to life through code.</Typography>
                     <Stack direction='row' mt='20px' width='250px' alignItems='space-between' justifyContent='space-between'>
                         <Button variant='outlined' color='secondary'sx={{color: 'secondary', borderRadius: '10px', fontSize: '12px', height: '50px'}}>Download Resume</Button>
+                        <IconButton href="https://www.linkedin.com/in/alex-swiggum-profile/" target='_blank' color='primary'><LinkedInIcon sx={{fontSize:25}} /></IconButton>
+                        <IconButton href='https://github.com/swigguma5776' target='_blank' color='primary'><GitHubIcon sx={{fontSize:25}} /></IconButton>
                     </Stack>
                 </Stack>
             </Stack>

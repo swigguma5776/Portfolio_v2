@@ -9,15 +9,16 @@ import IconButton from '@mui/material/IconButton';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import project1_image from '../../assets/images/mvie.png'; 
-import project2_image from '../../assets/images/carbongalaxy.png'
+import project2_image from '../../assets/images/carbongalaxy.png';
+import project3_image from '../../assets/images/project4.png';
 
 const myStyles = {
     projectImages: {
-        height: '100px',
-        width: '100px'
+        height: '100%',
+        width: '100%'
     },
     hoverStyles: {
-        height: '350px',
+        height: '360px',
         width: '1500px',
         curser: 'pointer',
         ':hover': {
@@ -46,6 +47,15 @@ const myProjects = {
         appLink: "https://carbon-galaxy-app.web.app/",
         image: project2_image
     },
+    project3: {
+        title: 'Weather App',
+        description: `A fullstack web app for creating a shared watchlist amonst friends/family. Browse 
+        movies/shows based on numerous criteria, get recommended shows, create shared watchlists (Hubs), and rate and review shows together`,
+        techStack: ['JavaScript', 'HTML', 'CSS', 'Heroku'],
+        githubLink: "https://github.com/swigguma5776/Current-Weather-Api_JavaScript",
+        appLink: "https://alexweather-app.herokuapp.com/",
+        image: project3_image
+    },
 }
 
 interface projectProps {
@@ -64,14 +74,14 @@ export const ProjectLeft = (props: projectProps) => {
     return (
     <Stack direction='column' alignItems='center' justifyContent='center' width='100%' height='500px'>
             <Stack width='60%' height='700px' alignItems='center' justifyContent='space-between' direction = {{xs: 'column', sm: 'row'}}>
-                <Button style={myStyles.hoverStyles}>
-                    <img src={props.project.image} style={{maxHeight: '100%', width: '100%'}}/>
+                <Button style={myStyles.hoverStyles} href={props.project.appLink} target="_blank">
+                    <img src={props.project.image} style={myStyles.projectImages}/>
                 </Button>
                 <Stack ml='50px' direction = 'column' width='100%'>
                     <Typography variant='h4' color='primary.light'>{props.project.title}</Typography>
                     <Typography variant='body1' mt='20px' color='primary'>{props.project.description}</Typography>
                     <Stack justifyContent='space-between' direction ='row' mt='20px'>
-                        {props.project.techStack.map((tech: any, index: any) => (
+                        {props.project.techStack.map((tech: any) => (
                                 <Typography variant='body2' color='secondary'>{tech}</Typography>
                             ))}
                     </Stack>
@@ -94,7 +104,7 @@ export const ProjectRight = (props: projectProps) => {
                     <Typography variant='h4' color='primary.light'>{props.project.title}</Typography>
                     <Typography variant='body1' mt='20px' color='primary'>{props.project.description}</Typography>
                     <Stack justifyContent='space-between' direction ='row' mt='20px' width='100%'>
-                        {props.project.techStack.map((tech: any, index: any) => (
+                        {props.project.techStack.map((tech: any) => (
                                 <Typography variant='body2' color='secondary'>{tech}</Typography>
                             ))}
                     </Stack>
@@ -103,8 +113,8 @@ export const ProjectRight = (props: projectProps) => {
                         <IconButton href={props.project.appLink} target='_blank'color='primary'><VisibilityIcon /></IconButton>
                     </Stack>     
                 </Stack>
-                <Button style={myStyles.hoverStyles}>
-                    <img src={props.project.image} style={{maxHeight: '100%', width: '100%'}}/>
+                <Button style={myStyles.hoverStyles} href={props.project.appLink} target='_blank'>
+                    <img src={props.project.image} style={myStyles.projectImages}/>
                 </Button>
             </Stack>
         </Stack>
@@ -116,7 +126,7 @@ export const Projects = () => {
         <Stack>
             <ProjectLeft project={myProjects.project1} />
             <ProjectRight project={myProjects.project2} />
-            <ProjectLeft project={myProjects.project1} />
+            <ProjectLeft project={myProjects.project3} />
         </Stack>
     )
 }
