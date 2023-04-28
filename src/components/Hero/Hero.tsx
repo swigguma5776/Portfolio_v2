@@ -5,6 +5,7 @@ import { Avatar,
     Stack,
     Typography } from '@mui/material'; 
 import hero_image from '../../assets/images/alex2crop.jpg'; 
+import IconButton from '@mui/material/IconButton';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 
@@ -25,7 +26,7 @@ export const Hero = () => {
                     </Stack>
                 </Stack>
             </Stack>
-            <Button onClick={()=>{ window.scrollBy({left:0, top:500, behavior:"smooth"}) }} color='secondary'><KeyboardArrowDownIcon sx={{ fontSize: 60, mb:'20px'}}/></Button>
+            <IconButton sx={{position:'relative'}} onClick={()=>{ window.scrollBy({left:0, top:600, behavior:"smooth"}) }} color='secondary'><KeyboardArrowDownIcon sx={{ fontSize: 60, mb:'20px'}}/></IconButton>
         </Stack>
     )
 }
