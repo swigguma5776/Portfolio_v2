@@ -18,12 +18,13 @@ const myStyles = {
         width: '100%'
     },
     hoverStyles: {
-        height: '360px',
-        width: '1500px',
+        height: {md:'360px'},
+        width: {md:'1500px', sm: '125%'},
         curser: 'pointer',
         ':hover': {
-            color: 'white',
-            backgroundColor: 'white'
+            backgroundColor: '#55D7BB',
+            backgroundOpacity: '25%',
+            opacity: '50%'
         }
     }
 }
@@ -72,13 +73,14 @@ interface projectProps {
 export const ProjectLeft = (props: projectProps) => {
     console.log(props.project.techStack)
     return (
-    <Stack direction='column' alignItems='center' justifyContent='center' width='100%' height='500px'>
-            <Stack width='60%' height='700px' alignItems='center' justifyContent='space-between' direction = {{xs: 'column', sm: 'row'}}>
-                <Button style={myStyles.hoverStyles} href={props.project.appLink} target="_blank">
+    <Stack direction='column' alignItems='center' justifyContent='center' width='100%' height='500px' mt='20px'>
+            <Stack width='60%' height='700px' mt={{xs: '50px', md: '0px'}} alignItems={{md:'center', xs: 'start'}} justifyContent='space-between' direction = {{xs: 'column', sm: 'row'}}>
+                {window.innerWidth < 600 ? <Typography variant='h4' color='primary.light'>{props.project.title}</Typography> : ""}
+                <Button sx={myStyles.hoverStyles} href={props.project.appLink} target="_blank">
                     <img src={props.project.image} style={myStyles.projectImages}/>
                 </Button>
-                <Stack ml='50px' direction = 'column' width='100%'>
-                    <Typography variant='h4' color='primary.light'>{props.project.title}</Typography>
+                <Stack sx={{ ml: {md:'50px', sm:'0px'}}} direction = 'column' width='100%'>
+                    {window.innerWidth > 600 ? <Typography variant='h4' color='primary.light'>{props.project.title}</Typography> : "" }
                     <Typography variant='body1' mt='20px' color='primary'>{props.project.description}</Typography>
                     <Stack justifyContent='space-between' direction ='row' mt='20px'>
                         {props.project.techStack.map((tech: any) => (
@@ -113,7 +115,7 @@ export const ProjectRight = (props: projectProps) => {
                         <IconButton href={props.project.appLink} target='_blank'color='primary'><VisibilityIcon /></IconButton>
                     </Stack>     
                 </Stack>
-                <Button style={myStyles.hoverStyles} href={props.project.appLink} target='_blank'>
+                <Button sx={myStyles.hoverStyles} href={props.project.appLink} target='_blank'>
                     <img src={props.project.image} style={myStyles.projectImages}/>
                 </Button>
             </Stack>
@@ -125,7 +127,7 @@ export const Projects = () => {
     return (
         <Stack>
             <ProjectLeft project={myProjects.project1} />
-            <ProjectRight project={myProjects.project2} />
+            {window.innerWidth < 720 ? <ProjectLeft project={myProjects.project2} /> : <ProjectRight project={myProjects.project2} />}
             <ProjectLeft project={myProjects.project3} />
         </Stack>
     )

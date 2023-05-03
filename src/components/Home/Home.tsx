@@ -15,14 +15,21 @@ const Main = styled('main')({
     backgroundColor: '#0B192F',
     width: '100%',
     height: '100%',
-    backgroundSize: 'cover'
+    right: 0, 
+    margin: 0,
+    padding: 0,
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
+    backgroundAttachment: 'fixed',
+    overflow: 'hidden'
 
 })
 
-const Root = styled("div")({
-    padding: 0,
-    margin: -10,
-  });
+// const Root = styled("div")({
+//     padding: 0,
+//     margin: 0,
+//   });
 
 interface titleProps {
     title: string
@@ -35,7 +42,7 @@ const Dividers = (props: titleProps) => {
             <Typography variant='h4' color='primary.light'>
                 {props.title}.
             </Typography>
-            <Divider variant='inset' color='primary.light' sx={{width:'75%', background: 'primary.light'}} />
+            <Divider variant='inset' color='primary.light' sx={{ width:{md:'75%', xs:'60%'}, background: 'primary.light'}} />
         </Stack>
     )
 }
@@ -52,19 +59,17 @@ const Footer = () => {
 
 export const Home = () => {
     return (
-        <Root>
-            <Main>
-                <Stack direction='column' alignItems='center'>
-                    <Hero />
-                    <Dividers title='About Me'/>
-                    <About />
-                    <Dividers title='My Projects'/>
-                    <Projects />
-                    <Dividers title='Contact Me'/>
-                    <Contact />
-                    <Footer />
-                </Stack>
-            </Main>
-        </Root>
+        <Main>
+            <Stack direction='column' alignItems='center'>
+                <Hero />
+                <Dividers title='About Me'/>
+                <About />
+                <Dividers title='My Projects'/>
+                <Projects />
+                <Dividers title='Contact Me'/>
+                <Contact />
+                <Footer />
+            </Stack>
+        </Main>
     )
 }

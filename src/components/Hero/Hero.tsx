@@ -13,10 +13,10 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 export const Hero = () => {
     return (
-        <Stack direction='column' alignItems='center' justifyContent='center'>
-            <Stack width='60%' height='700px' alignItems='center' justifyContent='space-between' direction = {{xs: 'column', sm: 'row'}}>
-                <Avatar sx={{width: 350, height: 350, border: '5px solid #55D7BB'}}><img src={hero_image} style={{width: '100%', marginTop: '15px'}}/></Avatar>
-                <Stack ml='50px' direction = 'column'>
+        <Stack direction='column' alignItems='center' justifyContent='center' mt={{xs: '100px', md: '0px'}}>
+            <Stack width='60%' height='700px' alignItems={{md:'center', xs: 'end'}} justifyContent='space-between' direction = {{xs: 'column', sm: 'row'}}>
+                <Avatar sx={{width: {xs: '250px', md: '350px'}, height: { xs: '250px', md:'350px'}, ml: 'auto', mr: 'auto', border: '5px solid #55D7BB'}}><img src={hero_image} style={{width: '100%', marginTop: '15px'}}/></Avatar>
+                <Stack ml={{md:'50px', xs:'0px'}} direction = 'column'>
                     <Typography variant='h1' color='white' sx={{fontWeight: 500}}>Alex Swiggum</Typography>
                     <Typography variant='h4' color='primary.light'>Full-Stack Developer</Typography>
                     <Typography variant='body1' mt='20px' color='primary'>I'm a full-stack software developer who 
@@ -30,7 +30,7 @@ export const Hero = () => {
                     </Stack>
                 </Stack>
             </Stack>
-            <IconButton sx={{position:'relative'}} onClick={()=>{ window.scrollBy({left:0, top:600, behavior:"smooth"}) }} color='secondary'><KeyboardArrowDownIcon sx={{ fontSize: 60, mb:'20px'}}/></IconButton>
+            <IconButton sx={{position:'relative', mt:{xs: '50px', md: '0px'}}} onClick={()=>{ window.scrollBy({left:0, top:600, behavior:"smooth"}) }} color='secondary'><KeyboardArrowDownIcon sx={{ fontSize: 60, mb:'20px'}}/></IconButton>
         </Stack>
     )
 }
