@@ -41,8 +41,9 @@ const myProjects = {
     },
     project2: {
         title: 'Carbon Galaxy',
-        description: `A fullstack web app for creating a shared watchlist amonst friends/family. Browse 
-        movies/shows based on numerous criteria, get recommended shows, create shared watchlists (Hubs), and rate and review shows together`,
+        description: `A fullstack web app that enables users to input website URLs and receive 
+        comprehensive carbon emissions data, empowering them to make sustainable choices. The collected emissions data is efficiently stored 
+        on a personalized user dashboard, fostering awareness about the global impact even web searching has.`,
         techStack: ['React', 'Flask', 'ElephantSQL', 'GoogleFirebase', 'Glitch'],
         githubLink: "https://github.com/swigguma5776/Carbon_Galaxy",
         appLink: "https://carbon-galaxy-app.web.app/",
@@ -50,8 +51,8 @@ const myProjects = {
     },
     project3: {
         title: 'Weather App',
-        description: `A fullstack web app for creating a shared watchlist amonst friends/family. Browse 
-        movies/shows based on numerous criteria, get recommended shows, create shared watchlists (Hubs), and rate and review shows together`,
+        description: `A simple and clean weather app programmed with vanilla JavaScript, HTML & CSS that allows users to search for weather 
+        updates for cities worldwide. `,
         techStack: ['JavaScript', 'HTML', 'CSS', 'Heroku'],
         githubLink: "https://github.com/swigguma5776/Current-Weather-Api_JavaScript",
         appLink: "https://alexweather-app.herokuapp.com/",

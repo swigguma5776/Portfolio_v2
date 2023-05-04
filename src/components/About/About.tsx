@@ -22,19 +22,20 @@ export const About = () => {
     return (
         <Stack direction = 'column' width='60%' padding='30px' mt='50px'>
             <Typography variant='body1' color='primary'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-             velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-             sunt in culpa qui officia deserunt mollit anim id est laborum.
+            As a full stack software engineer specializing in Python/Flask back-end development and JavaScript/React 
+            front-end development, I bring a unique blend of technical expertise and creative problem-solving skills to my work. 
+            With six years of experience as a licensed Interior designer for a nationally recognized firm, I developed a keen 
+            eye for detail, strong project management abilities, and an enthusiasm for solving complex problems. However, 
+            my journey took an unexpected turn when I discovered a deep passion for coding. This led me to enroll in a coding 
+            bootcamp where I honed my skills and quickly excelled in both back-end and front-end development.
             </Typography>
             <br />
             <Typography variant='body1' color='primary'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-             velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-             sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Driven by my newfound passion, I was invited to join the coding bootcamp as an instructor, where I've had the opportunity 
+            to guide and inspire aspiring developers for the past year. This experience has not only solidified my technical knowledge but 
+            also has enhanced my ability to communicate complex concepts in a clear and concise manner. With my diverse background 
+            and years of experience, I approach software engineering with a unique perspective, combining my design sensibilities 
+            with my technical expertise to create intuitive and visually appealing applications that prioritize user experience.
             </Typography>
             <br />
             <Typography variant='h6' color='primary.light' mb='20px' mt='20px'>
