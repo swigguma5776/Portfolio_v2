@@ -12,6 +12,10 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 
 export const Hero = () => {
+
+    const pdfOpen = () => {
+        window.open('../../assets/images/mvie.png', '_blank')
+    }
     return (
         <Stack direction='column' alignItems='center' justifyContent='center' mt={{xs: '100px', md: '0px'}}>
             <Stack width='60%' height='700px' alignItems={{md:'center', xs: 'end'}} justifyContent='space-between' direction = {{xs: 'column', sm: 'row'}}>
@@ -24,7 +28,7 @@ export const Hero = () => {
                         From crafting responsive UI designs to building scalable server-side architectures, I am passionate about bringing 
                         innovative ideas to life through code.</Typography>
                     <Stack direction='row' mt='20px' width='250px' alignItems='space-between' justifyContent='space-between'>
-                        <Button variant='outlined' color='secondary'sx={{color: 'secondary', borderRadius: '10px', fontSize: '12px', height: '50px'}}>Download Resume</Button>
+                        <Button href='https://drive.google.com/file/d/1vC5llzqyxpKwgKVDcJxrj-vQEbOvwIa2/view?usp=sharing' target='_blank'  variant='outlined' color='secondary'sx={{color: 'secondary', borderRadius: '10px', fontSize: '12px', height: '50px'}}>Download Resume</Button>
                         <IconButton href="https://www.linkedin.com/in/alex-swiggum-profile/" target='_blank' color='primary'><LinkedInIcon sx={{fontSize:25}} /></IconButton>
                         <IconButton href='https://github.com/swigguma5776' target='_blank' color='primary'><GitHubIcon sx={{fontSize:25}} /></IconButton>
                     </Stack>
