@@ -15,7 +15,8 @@ const techList = [
     'Express.js',
     'PostgreSQL',
     'MongoDB',
-    'Ajax'
+    'AWS',
+    'Apache Jmeter'
 ]
 
 export const About = () => {
