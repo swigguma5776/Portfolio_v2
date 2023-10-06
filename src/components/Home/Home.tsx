@@ -12,7 +12,10 @@ import {
 import Divider from '@mui/material/Divider';
 
 const Main = styled('main')({
-    backgroundColor: '#0B192F',
+    backgroundColor: '#1e6c51',
+    // backgroundColor: '#186d50',
+    // backgroundColor: "#00794E", 
+    // backgroundColor: '#0B192F',
     width: '100%',
     height: '100%',
     right: 0, 

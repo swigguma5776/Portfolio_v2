@@ -12,7 +12,7 @@ const techList = [
     'JavaScript (ES6)',
     'TypeScript',
     'React',
-    'Express.js',
+    'Docker',
     'PostgreSQL',
     'MongoDB',
     'AWS',
@@ -23,20 +23,19 @@ export const About = () => {
     return (
         <Stack direction = 'column' width='60%' padding='30px' mt='50px'>
             <Typography variant='body1' color='primary'>
-            As a full stack software engineer specializing in Python/Flask back-end development and JavaScript/React 
-            front-end development, I bring a unique blend of technical expertise and creative problem-solving skills to my work. 
-            With six years of experience as a licensed Interior designer for a nationally recognized firm, I developed a keen 
-            eye for detail, strong project management abilities, and an enthusiasm for solving complex problems. However, 
-            my journey took an unexpected turn when I discovered a deep passion for coding. This led me to enroll in a coding 
-            bootcamp where I honed my skills and quickly excelled in both back-end and front-end development.
+            As a dedicated back-end engineer with a little bit of front-end knowledge too, I bring a unique perspective to the world of software development, leveraging my 
+            background as an interior architect to craft elegant and structurally sound digital solutions. Drawing upon my experience 
+            in understanding how components seamlessly come together in the built environment, I apply the same meticulous attention 
+            to detail when designing and optimizing the back-end systems that power modern applications.
+            Along with my keen eye for detail, I have developed strong project management abilities, and an enthusiasm for solving complex problems. 
             </Typography>
             <br />
             <Typography variant='body1' color='primary'>
-            Driven by my newfound passion, I was invited to join the coding bootcamp as an instructor, where I've had the opportunity 
-            to guide and inspire aspiring developers for the past year. This experience has not only solidified my technical knowledge but 
+            I currently share my expertise and passion for programming as a Lead Software Engineer Instructor, where I've had the opportunity 
+            to guide aspiring developers for the past year. This experience has not only solidified my technical knowledge but 
             also has enhanced my ability to communicate complex concepts in a clear and concise manner. With my diverse background 
-            and years of experience, I approach software engineering with a unique perspective, combining my design sensibilities 
-            with my technical expertise to create intuitive and visually appealing applications that prioritize user experience.
+            and years of experience, I approach software engineering with a unique perspective, combining my architectural sensibilities 
+            with my technical expertise to create optimized and scalable applications that prioritize user experience.
             </Typography>
             <br />
             <Typography variant='h6' color='primary.light' mb='20px' mt='20px'>
