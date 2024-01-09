@@ -6,24 +6,27 @@ import Grid from "@mui/material/Grid";
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 
 
-const techList = [
+let techList = [
     'Python',
     'Flask',
-    'JavaScript (ES6)',
+    'JavaScript',
     'TypeScript',
     'React',
     'Docker',
     'PostgreSQL',
     'MongoDB',
     'AWS',
-    'Apache Jmeter'
+    'Django'
 ]
+
+techList = techList.sort()
+
 
 export const About = () => {
     return (
         <Stack direction = 'column' width='60%' padding='30px' mt='50px'>
             <Typography variant='body1' color='primary'>
-            As a dedicated back-end engineer with a little bit of front-end knowledge too, I bring a unique perspective to the world of software development, leveraging my 
+            As a dedicated back-end engineer with some front-end knowledge too, I bring a unique perspective to the world of software development, leveraging my 
             background as an interior architect to craft elegant and structurally sound digital solutions. Drawing upon my experience 
             in understanding how components seamlessly come together in the built environment, I apply the same meticulous attention 
             to detail when designing and optimizing the back-end systems that power modern applications.

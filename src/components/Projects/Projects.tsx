@@ -8,14 +8,16 @@ import { Avatar,
 import IconButton from '@mui/material/IconButton';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import VisibilityIcon from '@mui/icons-material/Visibility';
-import project1_image from '../../assets/images/mvie.png'; 
-import project2_image from '../../assets/images/carbongalaxy.png';
-import project3_image from '../../assets/images/project4.png';
+import project1_image from '../../assets/images/recipeapi.png'; 
+import project2_image from '../../assets/images/mvie2.png'; 
+import project3_image from '../../assets/images/carbongalaxy.png';
+import project4_image from '../../assets/images/project4.png';
 
 const myStyles = {
     projectImages: {
         height: '100%',
-        width: '100%'
+        width: '100%',
+        borderRadius: '5px',
     },
     hoverStyles: {
         height: {md:'360px'},
@@ -31,33 +33,45 @@ const myStyles = {
 
 const myProjects = {
     project1: {
-        title: 'Mvie',
-        description: `A fullstack web app for creating a shared watchlist amongst friends/family. Browse 
-        movies/shows based on numerous criteria, get recommended shows, create shared watchlists (Hubs), and rate and review shows together`,
-        techStack: ['React', 'Flask', 'ElephantSQL', 'GoogleFirebase', 'Glitch'],
-        githubLink: "https://github.com/swigguma5776/Mvie_Streaming",
-        appLink: "https://mvie-app.web.app/",
+        title: 'Recipe API',
+        description: `An advanced RESTful API built with Django REST Framework, Docker, a Postgres database and deployed
+        using AWS EC2 Linux server that allows full CRUD operations for creating & managing recipes, adding filters and uploading images. 
+        This API also leverages key development strategies/tools such as Test Driven Development (TDD), Github Actions, 
+        Travis-CI code checks and a local development server built in Docker. `,
+        techStack: ['Django', 'Docker', 'EC2', 'Github Actions', 'PostgreSQL'],
+        githubLink: "https://github.com/swigguma5776/recipe-app-api",
+        appLink: "http://ec2-44-203-95-127.compute-1.amazonaws.com/api/docs/",
         image: project1_image
     },
     project2: {
+        title: 'Mvie',
+        description: `A fullstack web app for creating a shared watchlist amongst friends/family. Browse 
+        movies/shows based on numerous criteria, get recommended shows, create shared watchlists (Hubs), and rate and review shows together`,
+        techStack: ['ElephantSQL', 'Flask', 'Glitch', 'GoogleFirebase', 'React'],
+        githubLink: "https://github.com/swigguma5776/Mvie_Streaming",
+        appLink: "https://mvie-app.web.app/",
+        image: project2_image
+    },
+    project3: {
         title: 'Carbon Galaxy',
         description: `A fullstack web app that enables users to input website URLs and receive 
         comprehensive carbon emissions data, empowering them to make sustainable choices. The collected emissions data is efficiently stored 
         on a personalized user dashboard, fostering awareness about the global impact even web searching has.`,
-        techStack: ['React', 'Flask', 'ElephantSQL', 'GoogleFirebase', 'Glitch'],
+        techStack: ['ElephantSQL', 'Flask', 'Glitch', 'GoogleFirebase', 'React'],
         githubLink: "https://github.com/swigguma5776/Carbon_Galaxy",
         appLink: "https://carbon-galaxy-app.web.app/",
-        image: project2_image
-    },
-    project3: {
-        title: 'Weather App',
-        description: `A simple and clean weather app programmed with vanilla JavaScript, HTML & CSS that allows users to search for weather 
-        updates for cities worldwide. `,
-        techStack: ['JavaScript', 'HTML', 'CSS', 'Heroku'],
-        githubLink: "https://github.com/swigguma5776/Current-Weather-Api_JavaScript",
-        appLink: "https://alexweather-app.herokuapp.com/",
         image: project3_image
     },
+    
+    // project4: {
+    //     title: 'Weather App',
+    //     description: `A simple and clean weather app programmed with vanilla JavaScript, HTML & CSS that allows users to search for weather 
+    //     updates for cities worldwide. `,
+    //     techStack: ['JavaScript', 'HTML', 'CSS', 'Heroku'],
+    //     githubLink: "https://github.com/swigguma5776/Current-Weather-Api_JavaScript",
+    //     appLink: "https://alexweather-app.herokuapp.com/",
+    //     image: project4_image
+    // },
 }
 
 interface projectProps {
