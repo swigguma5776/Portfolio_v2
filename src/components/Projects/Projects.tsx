@@ -35,7 +35,7 @@ const myProjects = {
     project1: {
         title: 'Recipe API',
         description: `An advanced RESTful API built with Django REST Framework, Docker, a Postgres database and deployed
-        using AWS EC2 Linux server that allows full CRUD operations for creating & managing recipes, adding filters and uploading images. 
+        using AWS EC2 cloud server that allows full CRUD operations for creating & managing recipes, adding filters and uploading images. 
         This API also leverages key development strategies/tools such as Test Driven Development (TDD), Github Actions, 
         Travis-CI code checks and a local development server built in Docker. `,
         techStack: ['Django', 'Docker', 'EC2', 'Github Actions', 'PostgreSQL'],

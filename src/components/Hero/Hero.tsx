@@ -27,7 +27,12 @@ export const Hero = () => {
                     in crafting robust and scalable server-side solutions. My passion lies in building the backbone of applications, 
                     ensuring their performance, scalability, and reliability. I thrive on bringing innovative ideas to life through code.</Typography>
                     <Stack direction='row' mt='20px' width='250px' alignItems='space-between' justifyContent='space-between'>
-                        <Button href='https://docs.google.com/document/d/1iD6d2aXY2vfdTQpXfcIyVvWvaGrLPTRnaTLGF3c9UH0/export?format=pdf' target='_blank'  variant='outlined' color='secondary'sx={{color: 'secondary', borderRadius: '10px', fontSize: '12px', height: '50px'}}>Download Resume</Button>
+                        <Button 
+                        href='https://docs.google.com/document/d/1iD6d2aXY2vfdTQpXfcIyVvWvaGrLPTRnaTLGF3c9UH0/export?format=pdf'
+                        // href='https://docs.google.com/document/d/1iD6d2aXY2vfdTQpXfcIyVvWvaGrLPTRnaTLGF3c9UH0/export?format=pdf'
+                        target='_blank'  variant='outlined' color='secondary'
+                        sx={{color: 'secondary', borderRadius: '10px', fontSize: '12px', height: '50px'}}
+                        >Download Resume</Button>
                         <IconButton href="https://www.linkedin.com/in/alex-swiggum-profile/" target='_blank' color='primary'><LinkedInIcon sx={{fontSize:25}} /></IconButton>
                         <IconButton href='https://github.com/swigguma5776' target='_blank' color='primary'><GitHubIcon sx={{fontSize:25}} /></IconButton>
                     </Stack>
